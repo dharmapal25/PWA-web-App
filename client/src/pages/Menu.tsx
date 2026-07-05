@@ -1,25 +1,32 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { CgClose } from 'react-icons/cg';
 import { DiJavascript, DiPython } from 'react-icons/di';
 import { SlArrowDown, SlArrowUp } from 'react-icons/sl';
 import { Link } from 'react-router-dom';
 
-function Menu({ Toggle }) {
+type MenuProps = {
+  Toggle: {
+    menu: boolean;
+  };
+};
+
+function Menu({ Toggle }: MenuProps) {
     const [isOpen, setIsOpen] = useState<boolean>(false);
-    const [isMenu, setIsMenu] = useState<boolean>(false);
+    const [isMenu, setIsMenu] = useState<boolean>(true);
 
     console.log(Toggle.menu)
 
     useEffect(() => {
-        setIsMenu(Toggle.menu)
+        setIsMenu(true)
     }, [Toggle.menu])
     
     const toggleDropdown = () => {
         setIsOpen(!isOpen);
+        // setIsMenu(Toggle.menu)
     };
 
     return (
-        <div className={`menu__wrapper ${(isMenu) ? "close__menu" : ""} `} >
+        <div className={`menu__wrapper ${(isMenu) ? "close__menu" : "" } `} >
             <div className="menu__container">
                 <div className="menu__navbar">
                     <span className="menu__logo">Flash Code <br /> Editor</span>

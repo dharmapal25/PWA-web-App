@@ -17,6 +17,11 @@ const Routes = createBrowserRouter([
   {
     path: "/python",
     element: <PythonCompiler />
+  },
+
+  {
+    path : "*",
+    element: <h1>404 Not Found</h1>
   }
 ])
 

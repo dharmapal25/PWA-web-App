@@ -11,6 +11,13 @@
 
 }
 
+.tools {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
 .run__button {
     padding: 9px 20px;
     border-radius: 10px;
@@ -31,7 +38,6 @@
 }
 
 
-
 .input__header {
     display: flex;
     justify-content: space-between;
@@ -46,7 +52,8 @@
 .output__container {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 75%;
+    background-color: #1E1E1E;
 
 }
 

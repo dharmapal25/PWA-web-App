@@ -1,6 +1,5 @@
-import React from 'react'
-import Compiler from '../Routes/Compilers.Route'
 import CodeEditor from '../components/Code/CodeEditor'
+import Navbar from '../components/Navbar/Navbar'
 
 function PythonEditor() {
   
@@ -11,8 +10,7 @@ function PythonEditor() {
 
   return (
     <div>
-        <h1>Python Compiler</h1>
-        <Compiler/>
+      <Navbar/>
         <CodeEditor pythonInfo={pythonInfo} />
     </div>
   )

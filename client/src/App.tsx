@@ -1,9 +1,8 @@
-import Navbar from "./components/Navbar/Navbar"
 import './App.css'
-import Editor from "./components/Code/CodeEditor"
 import { useEffect } from "react"
 import api from "./services/api"
-import Menu from "./pages/Menu"
+import Navbar from './components/Navbar/Navbar'
+// import Menu from "./pages/Menu"
 const App = () => {
 
   useEffect(() => {
@@ -15,10 +14,9 @@ const App = () => {
   return (
     <>
 
-      {/* <Navbar />
-      <Editor /> */}
+      <Navbar />
 
-        <Menu/>
+        {/* <Menu/> */}
 
 
 

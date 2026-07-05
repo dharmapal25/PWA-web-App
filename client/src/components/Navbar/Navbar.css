@@ -1,7 +1,8 @@
 .nav__container {
     display: flex;
     justify-content: space-around;
-    background-color: #4e4e4e9c;
+    align-items: center;
+    background-color: #9c9c9c;
     /* padding: 5px; */
     height: 8vh;
 

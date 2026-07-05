@@ -12,7 +12,7 @@
     transform: translateX(-600px);
     width: 280px;
     height: 100vh;
-    background-color: #1e1e24;
+    background-color: #202020fa;
     z-index: 111;
     color: #ffffff;
     transition: 1s;
