@@ -3,6 +3,7 @@ import App from './App.tsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import JavascriptCompiler from './pages/JSEditor.tsx'
 import PythonCompiler from './pages/PythonEditor.tsx'
+import Login from './pages/Login.tsx'
 
 
 const Routes = createBrowserRouter([
@@ -17,6 +18,10 @@ const Routes = createBrowserRouter([
   {
     path: "/python",
     element: <PythonCompiler />
+  },
+  {
+    path: "/login",
+    element: <Login />
   },
 
   {
